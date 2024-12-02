@@ -15,7 +15,7 @@ const ShowTask = ({ tasklist, setTasklist, setEditTaskId }) => {
     <section className='showTask'>
       <p className="head">
         <span>
-          <span className="title">Todo</span>
+          <span className="title">Todo-App</span>
           <span className="count">{tasklist.length}</span>
         </span>
         <span className="clearAll" onClick={() => setTasklist([])}>Clear All</span>

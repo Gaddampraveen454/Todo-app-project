@@ -49,7 +49,7 @@ const AddTask = ({ tasklist, setTasklist, editTaskId, setEditTaskId }) => {
           value={inputValue} // Bind the input value to the 'inputValue' state
           onChange={(e) => setInputValue(e.target.value)} // Update the 'inputValue' state as user types
           autoComplete='off'
-          placeholder='Add or Edit task'
+          placeholder='Add Task or Edit task'
         />
         <button type="submit">{editTaskId ? 'Update' : 'Add'}</button>
       </form>
