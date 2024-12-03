@@ -2,13 +2,13 @@ import React from 'react';
 
 const ShowTask = ({ tasklist, setTasklist, setEditTaskId }) => {
   const deleteTask = (id) => {
-    // Filter out the task with the given id
+  
     const updatedTaskList = tasklist.filter((task) => task.id !== id);
-    setTasklist(updatedTaskList); // Update the tasklist state
+    setTasklist(updatedTaskList);
   };
 
   const startEditing = (id) => {
-    setEditTaskId(id); // Set the task ID to start editing
+    setEditTaskId(id);
   };
 
   return (
@@ -27,15 +27,14 @@ const ShowTask = ({ tasklist, setTasklist, setEditTaskId }) => {
               <span className="name">{task.name}</span>
               <span className="time">{task.time}</span>
             </p>
-            {/* Edit Icon */}
+         
             <i 
               className="bi bi-pencil-square" 
-              onClick={() => startEditing(task.id)} // Start editing when clicked
+              onClick={() => startEditing(task.id)}
             ></i>
-            {/* Delete Icon */}
             <i 
               className="bi bi-trash" 
-              onClick={() => deleteTask(task.id)} // Delete task when clicked
+              onClick={() => deleteTask(task.id)} 
             ></i>
           </li>
         ))}

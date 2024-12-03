@@ -28,16 +28,16 @@ const AddTask = ({ tasklist, setTasklist, editTaskId, setEditTaskId }) => {
       setTasklist(updatedTaskList);
       setEditTaskId(null); 
     } else {
-      // Add a new task
+      
       const newTask = {
         id: date.getTime(),
-        name: inputValue, // Task name from input
-        time: `${date.toLocaleTimeString()} ${date.toLocaleDateString()}` // Current time
+        name: inputValue, 
+        time: `${date.toLocaleTimeString()} ${date.toLocaleDateString()}` 
       };
       setTasklist([...tasklist, newTask]);
     }
 
-    // Clear the input field after submission
+
     setInputValue('');
   };
 
@@ -46,8 +46,8 @@ const AddTask = ({ tasklist, setTasklist, editTaskId, setEditTaskId }) => {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          value={inputValue} // Bind the input value to the 'inputValue' state
-          onChange={(e) => setInputValue(e.target.value)} // Update the 'inputValue' state as user types
+          value={inputValue} 
+          onChange={(e) => setInputValue(e.target.value)} 
           autoComplete='off'
           placeholder='Add The Task or Edit The task'
         />
