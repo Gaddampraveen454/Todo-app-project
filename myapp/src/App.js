@@ -6,7 +6,7 @@ import ShowTask from './components/ShowTask';
 
 const App = () => {
   const [tasklist, setTasklist] = useState([]);
-  const [editTaskId, setEditTaskId] = useState(null); // Track the task being edited
+  const [editTaskId, setEditTaskId] = useState(null); 
   
   return (
     <div className='App'>
