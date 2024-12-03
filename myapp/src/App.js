@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './app.css';
 import Header from './components/Header';
 import AddTask from './components/AddTask';
-import ShowTask from './components/ShowTask';
+import ShowTask from './components/ShowTask'
 
 const App = () => {
   const [tasklist, setTasklist] = useState([]);
@@ -10,6 +10,7 @@ const App = () => {
   
   return (
     <div className='App'>
+      "div tags"
       <Header />
       <AddTask 
         tasklist={tasklist} 
