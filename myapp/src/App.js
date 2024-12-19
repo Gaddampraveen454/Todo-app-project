@@ -9,7 +9,7 @@ const App = () => {
   const [editTaskId, setEditTaskId] = useState(null); 
   
   return (
-    //hello this is gaddam praveen patel
+  
     <div className='App'>
       <Header />
       <AddTask 
