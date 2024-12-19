@@ -4,7 +4,7 @@ import Header from './components/Header';
 import AddTask from './components/AddTask';
 import ShowTask from './components/ShowTask'
 
-const App = () => {  //App.js file
+const App = () => {  
   const [tasklist, setTasklist] = useState([]);
   const [editTaskId, setEditTaskId] = useState(null); 
   
